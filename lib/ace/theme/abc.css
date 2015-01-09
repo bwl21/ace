@@ -53,8 +53,9 @@
 .ace-abc .ace_keyword,
 .ace-abc .ace_meta,
 .ace-abc .ace_variable.ace_language ,
-.ace-abc .ace_variable {
-  color: #C800A4
+.ace-abc .ace_variable,
+.ace-abc .ace_zupfnoter.ace_string{
+  color: #ff0000
 }
 
 .ace-abc .ace_invisible {
@@ -94,6 +95,7 @@
 .ace-abc .ace_string {
   color: #3A00DC
 }
+
 
 .ace-abc .ace_comment {
   color: #008E00
