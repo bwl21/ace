@@ -1,50 +1,3 @@
-
-
-
-snippet zupfnoter.note
-			,{"pos": [30,30], "text": "note at 10,30", "style": "regular"}
-
-snippet zupfnoter.smallextract
-	   ,
-	   "${1:extractnr}": {
-			   "voices": [1,2,3,4],
-			   "flowlines": [1,3],
-			   "synchlines": [[1,2], [3,4]]
-			 }
-		 }
-
-snippet zupfnoter.extract
-	   ,
-	  "${1:extractnr}": {
-		  "title": "${2:extract_title}",
-		  "startpos": 15,
-		  "voices": [1, 2, 3, 4],
-		  "synchlines": [[1, 2], [3, 4]],
-		  "flowlines": [1, 3],
-		  "subflowlines": [2, 4],
-		  "jumplines": [1, 3],
-		  "layoutlines": [1, 2, 3, 4],
-		  "lyrics"      : { "1" : {"verses": [1], "pos": [314, 48]}},
-		  "notes": {"1": {"pos": [320, 0], "text": "", "style": "large"}}
-		  }
-
-snippet zupfnoter.config
-	%%%%zupfnoter.config
-	{
-	 "produce":[1,2],
-	 "extract": {
-	   "0": {
-			   "voices": [1,2,3,4],
-			   "flowlines": [1,3],
-			   "synchlines": [[1,2], [3,4]],
-			   "layoutlines": [1,2,3,4],
-			   "lyrics" : { "1" : {"verses": [1], "pos": [314, 48]}},
-			   "legend": {"pos": [330,20]},
-			   "notes" : {"1": {"pos": [320, 0], "text": "", "style": "large"}}
-			 }
-		 }
-	 }
-
 snippet zupfnoter.target
 	"^:${1:target}"
 
@@ -56,5 +9,11 @@ snippet zupfnoter.annotationref
 
 snippet zupfnoter.annotation
 	"^!${1:text}@${2:x_offset},${3:y_offset}"
+
+snippet zupfnoter.draggable
+	"[r:${1:text}]"
+
+
+
 
 
